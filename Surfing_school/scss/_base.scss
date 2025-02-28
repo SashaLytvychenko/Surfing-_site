@@ -1,0 +1,47 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+dd,
+dt,
+p {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  font-family: "Rethink Sans", serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.3;
+  font-weight: 600;
+  color: var(--color-primary-dark);
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 10px;
+  max-width: 1740px;
+}
