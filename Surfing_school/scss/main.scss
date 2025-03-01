@@ -35,6 +35,18 @@
 // Footer
 @import "./components/footer";
 
+// Mixins
+@import "./utils/mixins";
+
+// TEST WITH MIXINS
+// .cirle_test_1 {
+//   @include circle(100px, 100px, white);
+// }
+
+// .cirle_test_2 {
+//   @include circle(100px, 100px, green);
+// }
+
 /* Adding while doing adaptive */
 
 .menu__btn {
