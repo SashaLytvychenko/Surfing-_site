@@ -4,6 +4,13 @@
   &__top {
     margin-left: calc(50% + 10px);
     margin-bottom: 100px;
+    @media (max-width: 1280px) {
+      margin-left: 0;
+      margin-bottom: 75px;
+    }
+    @media (max-width: 480px) {
+      margin-bottom: 30px;
+    }
   }
 
   &__subtitle {
@@ -16,19 +23,34 @@
     font-size: 64px;
     font-weight: 800;
     text-transform: uppercase;
+    @media (max-width: 1280px) {
+      font-size: 44px;
+    }
   }
 
   &__items {
     display: grid;
     gap: 20px;
     grid-template-columns: 1fr 2fr 2fr 1fr;
+    @media (max-width: 1280px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 480px) {
+      grid-template-columns: 1fr;
+    }
   }
   &__item:nth-child(even) {
     margin-top: 100px;
+    @media (max-width: 1280px) {
+      margin-top: 0;
+    }
   }
   &__img {
     margin-bottom: 20px;
     max-width: 100%;
+    @media (max-width: 1280px) {
+      width: 100%;
+    }
   }
 }
 

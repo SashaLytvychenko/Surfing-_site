@@ -2,6 +2,9 @@
   padding: 100px 0;
   background-color: var(--color-primary-dark);
   color: var(--color-primary-light);
+  @media (max-width: 800px) {
+    padding: 75px 0;
+  }
 
   &__inner {
     max-width: 1160px;
@@ -13,17 +16,29 @@
     display: flex;
     justify-content: space-between;
     gap: 50px;
+    @media (max-width: 570px) {
+      flex-wrap: wrap-reverse;
+      gap: 30px;
+      justify-content: center;
+    }
   }
 
   &__title {
     font-size: 64px;
     font-weight: 800;
     text-transform: uppercase;
+    @media (max-width: 800px) {
+      font-size: 44px;
+    }
   }
   &__info-list {
     display: flex;
     gap: 68px;
     margin-bottom: 60px;
+    @media (max-width: 570px) {
+      flex-wrap: wrap;
+      gap: 30px;
+    }
   }
 
   &__info-item {
@@ -45,6 +60,9 @@
     justify-content: space-between;
     align-items: flex-end;
     gap: 50px;
+    @media (max-width: 800px) {
+      flex-wrap: wrap;
+    }
   }
 
   &__nav {

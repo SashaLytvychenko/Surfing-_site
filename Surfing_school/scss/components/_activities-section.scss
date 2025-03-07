@@ -1,8 +1,14 @@
 .activities {
+  @media (max-width: 480px) {
+    margin-bottom: 75px;
+  }
   &__parah {
     font-size: 20px;
     font-weight: 700;
     margin-bottom: 20px;
+    @media (max-width: 480px) {
+      margin-bottom: 10px;
+    }
   }
 
   &__inner {
@@ -10,6 +16,10 @@
     justify-content: space-between;
     gap: 20px;
     margin-bottom: 100px;
+    @media (max-width: 992px) {
+      flex-wrap: wrap;
+      margin-bottom: 50px;
+    }
   }
 
   &__title {
@@ -17,6 +27,13 @@
     font-size: 64px;
     font-weight: 800;
     text-transform: uppercase;
+    @media (max-width: 992px) {
+      flex-basis: 100%;
+      font-size: 44px;
+    }
+    @media (max-width: 480px) {
+      font-size: 44px;
+    }
   }
 
   &__content {
@@ -26,15 +43,29 @@
     flex-direction: column;
     gap: 10px;
     justify-content: space-between;
+    @media (max-width: 992px) {
+      flex-basis: 100%;
+    }
 
     .buttons-book {
       align-self: flex-start;
+      @media (max-width: 480px) {
+        font-size: 24px;
+        width: 100%;
+        text-align: center;
+      }
     }
   }
 
   &__list {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    @media (max-width: 800px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @media (max-width: 480px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
 
     &-item {
       border: 1px solid var(--color-primary-dark);
